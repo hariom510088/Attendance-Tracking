@@ -11,7 +11,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-your-secret-key-here'
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Allow all hosts for Railway (they'll provide the actual domain)
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
 # If you want to be more specific, you can use:
 # ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
